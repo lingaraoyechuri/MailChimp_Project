@@ -10,6 +10,7 @@ app.use(express.static("public"));
 //var path = require('path');
 
 app.get('/', (req, res) => {
+  console.log("checking");
   res.sendFile(__dirname + '/signup.html');
 });
 
